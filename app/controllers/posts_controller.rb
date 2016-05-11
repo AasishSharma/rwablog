@@ -16,8 +16,7 @@ class PostsController < ApplicationController
   	  redirect_to @post, notice: "Your article was successfully saved."
   	else
   	  render 'new', notice: "I was unable to save your post."
-	end
-
+	  end
   end
 
   def show
@@ -34,7 +33,6 @@ class PostsController < ApplicationController
     else
       render 'edit'
     end 
-
   end
 
   def destroy
