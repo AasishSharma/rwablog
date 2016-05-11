@@ -11,7 +11,7 @@
 
 <body>
   <header id="main_navigation" class="clearfix">
-	<%= link_to "Aasish Sharma", class: "name" %>
+	<%= link_to "Aasish Sharma", root_path, class: "name" %>
 	<nav>
 	
 	  <%= link_to "Articles"%>
@@ -22,6 +22,15 @@
   </header>
 
 <%= yield %>
+  
+  <footer id="main_footer">
+    <p class="copyright">&copy;2016 Aasish Sharma</p>
+	  <nav>
+	    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+		<a href="#" target="_blank"><i class="fa fa-github"></i></a>
+	  </nav>
+  </footer>
 
 </body>
 </html>

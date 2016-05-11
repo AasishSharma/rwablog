@@ -1,0 +1,20 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>Next level bitters pour-over butcher. Venmo try-hard synth pug freegan, raw denim cray art party paleo shabby chic kitsch roof party. Chillwave bespoke blue bottle, everyday carry marfa 8-bit helvetica skateboard. Cred seitan pitchfork,</p>
+		<p>roof party godard ramps fingerstache intelligentsia. Neutra drinking vinegar pug vice bitters. Cardigan pork belly mumblecore, lomo messenger bag church-key raw denim artisan selfies normcore lo-fi. DIY stumptown church-key letterpress, twee you probably haven't heard of them asymmetrical occupy ennui.</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff I've Written</h2>
+		<hr>
+		<% @posts.each do |post| %>
+			<h3><a href="#"><%= link_to post.title, post %></a></h3>
+			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Stuff I've Built</h2>
+		
+	</div>
+</div>
